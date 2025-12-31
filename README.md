@@ -1,20 +1,20 @@
-# Voice Chat Assistant
+# Voice-Based Conversational Assistant
 
-An AI-powered voice assistant that listens, thinks, and responds in real-time using:
+A real-time AI voice assistant that can hear user input, process it intelligently, and reply instantly through synthesized speech. It is built using:
 
--  OpenRouter + Gemma / Mistral LLMs
--  AssemblyAI for real-time speech-to-text (STT)
--  ElevenLabs for text-to-speech (TTS)
--  Language switching between English 🇺🇸 and Japanese 🇯🇵
+-  OpenRouter with Gemma / Mistral large language models
+-  AssemblyAI for live speech-to-text (STT) transcription
+-  ElevenLabs for natural-sounding text-to-speech (TTS)
+-  Dynamic language switching between English 🇺🇸 and Japanese 🇯🇵
 
-## Flow Overview
+## Interaction Flow
 
-1. **User speaks** → Audio captured via mic
-2. **AssemblyAI** transcribes the speech in real-time
-3. Transcript sent to **OpenRouter LLM** for streaming response
-4. Full response passed to **ElevenLabs** for audio generation
-5. Assistant speaks back using `<pitch>`, `<rate>`, and `<break>` tags
-6. Switches to japanese if user ask to switch to japanese
+1. User speaks → Audio is captured through the microphone
+2. AssemblyAI converts spoken audio into text in real time
+3. The transcribed text is forwarded to the OpenRouter LLM for a streaming response
+4. The complete response is sent to ElevenLabs to generate speech audio
+5. The assistant replies aloud using <pitch>, <rate>, and <break> speech tags
+6. The assistant switches to Japanese when the user requests a language change
    
 ## Tech Stack
 
