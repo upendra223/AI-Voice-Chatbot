@@ -13,7 +13,7 @@ A real-time AI voice assistant that can hear user input, process it intelligentl
 2. AssemblyAI converts spoken audio into text in real time
 3. The transcribed text is forwarded to the OpenRouter LLM for a streaming response
 4. The complete response is sent to ElevenLabs to generate speech audio
-5. The assistant replies aloud using <pitch>, <rate>, and <break> speech tags
+5. The assistant replies aloud using `<pitch>`, `<rate>`, and `<break>` speech tags
 6. The assistant switches to Japanese when the user requests a language change
    
 ## Tech Stack
